@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_app/database.dart';
 class ScreenFirst extends StatefulWidget {
 
   @override
@@ -55,7 +56,7 @@ class _ScreenFirstState extends State<ScreenFirst> {
                           height: 150,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            image: DecorationImage(image: AssetImage(''),
+                            image: DecorationImage(image: AssetImage(Database.MyList[index]['image']),
                             fit: BoxFit.cover)
                             
                           ),
